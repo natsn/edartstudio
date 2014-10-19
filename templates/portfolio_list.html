@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<h1>Portfolios</h1>
+	<ul>
+	{% for portfolio in object_list %}
+	    <li>{{ portfolio }}</li>
+	{% empty %}
+	    <li>No portfolios yet.</li>
+	{% endfor %}
+	</ul>
+
+{% endblock %}
